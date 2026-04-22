@@ -22,10 +22,11 @@ For detailed instructions, refer to the individual service READMEs:
 
 This project is architected for separate service deployments to ensure maximum reliability and scalability:
 
-### **1. Frontend Deployment (Vercel)**
-The frontend is optimized for **Vercel**. 
-- **Deployment URL**: `https://lifeline-30-frontend.vercel.app` (example)
-- **Deployment Path**: Deploy from the `/frontend` subfolder.
+### **1. Frontend Deployment (Vercel - SINGLE SERVICE)**
+The frontend is a standard Vite application located in `/frontend`.
+- **IMPORTANT**: In your Vercel Project Settings, set the **Root Directory** to `frontend`.
+- **Framework Preset**: Vite (should be auto-detected).
+- **DO NOT** use the experimental multi-service/monorepo config. This repository is optimized for standard, isolated frontend deployment.
 
 ### **2. Backend Deployment (Render / Judge's Endpoint)**
 The backend is optimized for Python-specific services like **Render**.

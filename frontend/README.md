@@ -30,6 +30,7 @@ npm run build
 ## ☁️ Deployment (Vercel)
 
 1. **Import to Vercel**: Connect your GitHub repository.
-2. **Root Directory**: Set the root directory to `frontend`.
-3. **Environment Variables**: Add `VITE_API_BASE_URL` pointing to your deployed Backend API.
-4. **Deploy**: Vercel will automatically detect the Vite framework and handle the build.
+2. **Root Directory (CRITICAL)**: In the "Build & Development Settings" section, set the **Root Directory** to `frontend`. This ensures Vercel treats this as a standard single-service Vite app.
+3. **Framework Preset**: Ensure "Vite" is selected.
+4. **Environment Variables**: Add `VITE_API_BASE_URL` pointing to your deployed Backend API.
+5. **Deploy**: Vercel will build exactly what is in the `/frontend` directory.

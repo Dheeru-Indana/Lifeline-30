@@ -21,3 +21,54 @@ build/
 .idea/
 .vscode/
 *.log
+
+
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+
+# Vercel
+.vercel/
+
+# Coverage / build
+coverage/
+htmlcov/
+build/
+
+# Misc
+*.swp
+*.swo
